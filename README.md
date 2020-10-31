@@ -28,6 +28,9 @@ app.listen(port, ()=> {
 ```
 
 ## Add your start scripts in package.json
+
+THe example below uses `server.js` but you might be using `app.js` -- it is whichever file you use to start your app
+
 ```
   "scripts": {
 
