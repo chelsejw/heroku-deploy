@@ -50,3 +50,17 @@ git push heroku main
 ```
 <appname>.herokuapp.com
 ```
+
+## 7. Add you environment variables
+
+1. Go to https://dashboard.heroku.com/apps
+2. Click on your app
+3. Go to Settings
+4. Scroll down a bit, there should be a Reveal Config Vars button
+5. Set the key value pairs as per your .env
+
+## 8. Ensure your package.json is in the root of your project
+
+Your file structure should be such that if you do an `ls` from the root you should see package.json right away. (So your package j.json should be located in `~/project-directory/package.json`, not something like `~/project-directory/main/package.json`)
+
+If it's not in the root you will get an error from Heroku saying that the build failed when you do `git push heroku master`
